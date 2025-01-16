@@ -4,12 +4,10 @@ vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO eliasdaler/imgui-sfml
     REF "v${VERSION}"
-    SHA512 c8f2ed21ad5dfac417474f0caed1c59105b7dd8bf2dcb1db3b1f46a4fb07cec3c199d6fda0ff05ec5040a18000a0168f1a8caa978dee356c2b6874b5b2e10ec4
+    SHA512 76e3fc19caa3c5b0d8f294052720d939113457bcc8ed6d5b6c59b2e394088b78fb18848bc85dd44b4763e8ef76cae5c993a947b7dd3e20026563f6369d8dce94
     HEAD_REF master
     PATCHES
         0001-fix_find_package.patch
-        0002-clean-deprecated-api.patch # see https://github.com/SFML/imgui-sfml/pull/305
-        0003-use-explicit-id.patch # see https://github.com/SFML/imgui-sfml/pull/266
 )
 
 vcpkg_cmake_configure(
